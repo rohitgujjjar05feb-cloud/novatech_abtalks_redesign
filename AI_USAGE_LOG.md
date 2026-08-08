@@ -1,74 +1,105 @@
 # AI Usage Log — ABTalks
 
 ## Project
+
 ABTalks 60-Day Coding Challenge Redesign
 
-## Stack
-- Next.js
-- Tailwind CSS
-- TypeScript
+## Tech stack
 
-## AI Usage
+* Next.js
+* Tailwind CSS
+* TypeScript
+
+## AI-assisted workflow
 
 ### 1. Product analysis
-Prompt:
-Analyzed the ABTalks challenge requirements and identified the
-three required routes and key student workflows.
+
+Prompt summary:
+Analyzed the ABTalks redesign challenge requirements and identified the required routes, user flows, and mobile-first priorities.
 
 Used for:
-- Route planning
-- UX requirements
-- Mobile-first prioritization
+
+* Route planning
+* User flow analysis
+* Feature prioritization
+* Information architecture
 
 ### 2. Landing page
-Prompt:
-Designed a mobile-first landing page for a 60-day coding challenge
-using a cryptographic/data-driven dark theme with purple accents.
+
+Prompt summary:
+Explored a mobile-first landing page focused on clarity, motivation, and visual hierarchy.
 
 Used for:
-- Hero messaging
-- Progress visualization
-- CTA structure
-- Visual direction
+
+* Hero section structure
+* CTA hierarchy
+* Layout organization
+* Visual direction
 
 ### 3. Dashboard
-Prompt:
-Designed a student dashboard focused on daily challenge completion.
+
+Prompt summary:
+Designed a student dashboard centered on progress tracking and daily challenge completion.
 
 Used for:
-- Streak card
-- Challenge progress
-- Weekly consistency
-- Achievements
-- Leaderboard
-- Continue challenge CTA
 
-### 4. Challenge Day
-Prompt:
-Designed the complete Day 12 challenge experience.
+* Dashboard layout
+* Progress visualization
+* Consistency tracking
+* Achievement presentation
+* Navigation flow
+
+### 4. Challenge day page
+
+Prompt summary:
+Designed the Day 12 challenge experience with task tracking and proof-of-work submission.
 
 Used for:
-- Task presentation
-- Learning objective
-- Checklist
-- GitHub proof
-- LinkedIn proof
-- Submission state
+
+* Challenge presentation
+* Learning objective layout
+* Task checklist
+* Submission flow
+* Completion feedback
 
 ### 5. Mobile optimization
-Prompt:
-Review the interface for a 390px mobile viewport and identify
-layout and usability improvements.
+
+Prompt summary:
+Reviewed the interface for a 390px mobile viewport and identified usability improvements.
 
 Used for:
-- Spacing
-- Typography
-- Button sizing
-- Card layout
 
-## Human Decisions
+* Responsive spacing
+* Typography scaling
+* Button sizing
+* Card layout
+* Mobile navigation
 
-I reviewed and modified the generated implementation,
-selected the final visual direction, adjusted content,
-tested the mobile layout, and made implementation decisions
-based on the hackathon requirements.
+### 6. Deployment and debugging
+
+Prompt summary:
+Assisted with GitHub integration, Vercel deployment, build debugging, and production validation.
+
+Used for:
+
+* Git workflow
+* Vercel deployment
+* Build error resolution
+* Production verification
+
+### 7. Iterative review and refinement
+
+Prompt summary:
+Reviewed the implemented interface, identified UI inconsistencies, refined layouts, and validated production readiness.
+
+Used for:
+
+* UI review
+* Layout refinement
+* Responsiveness improvements
+* Code organization
+* Final deployment validation
+
+## Human decisions
+
+I implemented and integrated the suggested code, reviewed each design iteration, modified layouts and content, resolved implementation issues, tested responsiveness, handled Git version control, and verified the final deployment on Vercel. The final design, functionality, and implementation decisions were made by me based on the ABTalks redesign requirements.
