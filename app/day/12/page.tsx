@@ -19,7 +19,31 @@ export default function ChallengeDay() {
           <span className="rounded-full border border-violet-400/15 bg-violet-500/10 px-2 py-1 text-[9px] font-bold text-violet-300">20%</span>
         </div>
       </header>
+          <div className="glass mb-5 rounded-[28px] p-5">
+      <div className="flex items-center justify-between">
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-[.18em] text-violet-400">
+            Today's progress
+          </p>
+          <h2 className="mt-2 text-xl font-black">
+            Day 12 of 60
+          </h2>
+        </div>
+        <div className="text-right">
+          <p className="text-2xl font-black text-violet-300">12🔥</p>
+          <p className="text-[10px] text-zinc-500">Current streak</p>
+        </div>
+      </div>
 
+      <div className="mt-5 h-2 overflow-hidden rounded-full bg-white/5">
+        <div className="h-full w-[20%] rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-400" />
+      </div>
+
+      <div className="mt-3 flex justify-between text-[10px] text-zinc-500">
+        <span>12 completed</span>
+        <span>48 remaining</span>
+      </div>
+    </div>
       <section className="mx-auto max-w-3xl px-5 pb-24 pt-7">
         <div className="mb-5">
           <p className="font-mono text-[9px] uppercase tracking-[.2em] text-violet-400">Daily build protocol</p>
@@ -89,6 +113,40 @@ export default function ChallengeDay() {
           </button>
           {submitted && <p className="mt-3 text-center text-[10px] text-emerald-300">Nice. Your progress signal has been recorded for Day 12.</p>}
         </section>
+            <section className="glass mt-3 rounded-[28px] p-5">
+      <div className="flex items-center gap-3">
+        <span className="text-2xl">🏆</span>
+        <div>
+          <p className="text-[9px] font-bold uppercase tracking-[.18em] text-violet-400">
+            Completion reward
+          </p>
+          <h2 className="mt-1 text-sm font-bold">
+            Day 12 milestone unlocked
+          </h2>
+        </div>
+      </div>
+
+      <p className="mt-3 text-xs leading-6 text-zinc-500">
+        Complete today's challenge and unlock the next milestone. Every finished
+        day adds visible proof to your portfolio and strengthens your consistency
+        streak.
+      </p>
+
+      <div className="mt-5 grid grid-cols-3 gap-2">
+        <div className="rounded-2xl border border-white/6 bg-white/[.03] p-3 text-center">
+          <p className="text-lg font-black text-violet-300">+1</p>
+          <p className="text-[9px] text-zinc-600">Day kept</p>
+        </div>
+        <div className="rounded-2xl border border-white/6 bg-white/[.03] p-3 text-center">
+          <p className="text-lg font-black text-violet-300">+1</p>
+          <p className="text-[9px] text-zinc-600">Proof logged</p>
+        </div>
+        <div className="rounded-2xl border border-white/6 bg-white/[.03] p-3 text-center">
+          <p className="text-lg font-black text-violet-300">13</p>
+          <p className="text-[9px] text-zinc-600">Next day</p>
+        </div>
+      </div>
+    </section>
 
         <div className="mt-4 flex items-center justify-between text-[9px] text-zinc-700">
           <span>ABT / BUILD_PROTOCOL / 12</span>
