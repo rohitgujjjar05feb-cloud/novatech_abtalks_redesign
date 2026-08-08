@@ -9,7 +9,7 @@ const week = [
   { d: "S", n: "09", done: false, today: true },
 ];
 
-const achievements = [
+const achievements: [string, string, string, boolean][] = [
   ["🔥", "7 Day Streak", "7 days kept", true],
   ["⚡", "First Ship", "First build published", true],
   ["◈", "Halfway", "30 days completed", false],
@@ -50,8 +50,8 @@ export default function Dashboard() {
           <div>
             <p className="font-mono text-[9px] uppercase tracking-[.2em] text-violet-400">Student / Dashboard</p>
             <h1 className="mt-2 text-2xl font-black tracking-tight">
-  Good evening,  Team Novatech.
-</h1>
+  Good evening, Team Novatech.
+            </h1>
             <p className="mt-1 text-xs text-zinc-500">One more build. Keep the signal alive.</p>
           </div>
           <div className="hidden rounded-2xl border border-emerald-400/15 bg-emerald-400/5 px-3 py-2 text-right sm:block">
@@ -158,14 +158,14 @@ export default function Dashboard() {
             </div>
             <p className="mt-5 text-[10px] leading-5 text-zinc-600">Missed a day? Don&apos;t restart. Your history stays intact — just complete today&apos;s build and continue.</p>
           </article>
-
+                
           <article className="glass rounded-[28px] p-5">
             <div className="flex items-center justify-between">
               <p className="text-[9px] font-bold uppercase tracking-[.18em] text-zinc-500">Achievements</p>
               <span className="text-[9px] text-zinc-600">2 / 3 unlocked</span>
             </div>
             <div className="mt-4 space-y-2">
-              {achievements.map(([icon, title, sub, unlocked]) => (
+              {achievements.map(([icon, title, sub, unlocked]: [string, string, string, boolean]) => (
                 <div key={title} className={`flex items-center gap-3 rounded-2xl border p-3 ${unlocked ? "border-white/7 bg-white/[.025]" : "border-white/5 bg-black/10 opacity-40"}`}>
                   <span className="grid h-9 w-9 place-items-center rounded-xl bg-violet-500/10 text-lg">{icon}</span>
                   <div><p className="text-[11px] font-bold">{title}</p><p className="text-[9px] text-zinc-600">{sub}</p></div>
@@ -182,7 +182,7 @@ export default function Dashboard() {
             <span className="font-mono text-[10px] text-violet-300">#48 / 312</span>
           </div>
           <div className="mt-4 space-y-2">
-            {[["01","Aarav","38 days","99%"],["02","Meera","34 days","96%"],["48","Shivam","12 days","86%"]].map(([rank,name,streak,score]) => (
+            {[["01","Rohit","38 days","99%"],["02","Nikita","34 days","96%"],["48","Shivam","12 days","88%"]].map(([rank,name,streak,score]) => (
               <div key={rank} className={`flex items-center gap-3 rounded-2xl border px-3 py-3 ${name === "Shivam" ? "border-violet-400/20 bg-violet-500/[.08]" : "border-white/5 bg-white/[.02]"}`}>
                 <span className="w-6 font-mono text-[10px] text-zinc-600">#{rank}</span>
                 <span className="grid h-7 w-7 place-items-center rounded-lg bg-white/5 text-[10px] font-bold">{name[0]}</span>
