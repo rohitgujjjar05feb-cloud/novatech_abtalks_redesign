@@ -96,7 +96,32 @@ export default function Dashboard() {
             </div>
           </article>
         </div>
+        <article className="mt-3 rounded-[28px] border border-violet-400/20 bg-gradient-to-br from-violet-500/10 to-indigo-500/5 p-5">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-[9px] font-bold uppercase tracking-[.18em] text-violet-300">
+                Streak Shield
+              </p>
+              <h3 className="mt-2 text-lg font-bold text-white">
+                Protect your streak
+              </h3>
+            </div>
+            <span className="rounded-full bg-violet-500/20 px-3 py-1 text-[10px] font-bold text-violet-300">
+              1 available
+            </span>
+          </div>
 
+          <p className="mt-3 text-xs leading-6 text-zinc-400">
+            Missed yesterday? Activate your monthly Streak Shield to protect
+            your current streak and continue the 60-day challenge without
+            losing your momentum.
+          </p>
+
+          <button className="mt-5 w-full rounded-2xl bg-violet-500 py-3 text-xs font-bold text-white transition hover:bg-violet-400">
+            Activate Shield
+          </button>
+        </article>
+        
         <article className="mt-3 overflow-hidden rounded-[28px] border border-violet-400/15 bg-gradient-to-br from-violet-500/[.12] to-white/[.02] p-5 shadow-[0_20px_70px_rgba(0,0,0,.2)]">
           <div className="flex items-center justify-between">
             <div>
