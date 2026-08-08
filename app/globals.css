@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #07060b;
+  --panel: #0e0c14;
+  --panel-2: #12101a;
+  --line: rgba(255,255,255,.09);
+  --muted: #9894a7;
+  --purple: #8b5cf6;
+  --purple-2: #6d3df5;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(124,58,237,.22), transparent 30rem),
+    var(--bg);
+  color: #f7f5fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: rgba(139,92,246,.35); }
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+.glass {
+  background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 80px rgba(0,0,0,.25);
+  backdrop-filter: blur(18px);
+}
+
+.glow {
+  box-shadow: 0 0 0 1px rgba(139,92,246,.2), 0 0 70px rgba(109,61,245,.18);
+}
+
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: .035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+}
