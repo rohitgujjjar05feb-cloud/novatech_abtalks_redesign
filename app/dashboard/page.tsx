@@ -10,24 +10,9 @@ const week = [
 ];
 
 const achievements = [
-  {
-    icon: "🔥",
-    title: "7 Day Streak",
-    sub: "7 days kept",
-    unlocked: true,
-  },
-  {
-    icon: "⚡",
-    title: "First Ship",
-    sub: "First build published",
-    unlocked: true,
-  },
-  {
-    icon: "◈",
-    title: "Halfway",
-    sub: "30 days completed",
-    unlocked: false,
-  },
+  { icon: "🔥", title: "7 Day Streak", sub: "7 days kept", unlocked: true },
+  { icon: "⚡", title: "First Ship", sub: "First build published", unlocked: true },
+  { icon: "◈", title: "Halfway", sub: "30 days completed", unlocked: false },
 ];
 
 export default function Dashboard() {
@@ -180,30 +165,31 @@ export default function Dashboard() {
               <span className="text-[9px] text-zinc-600">2 / 3 unlocked</span>
             </div>
             <div className="mt-4 space-y-2">
-              {achievements.map((achievement) => (
-  <div
-    key={achievement.title}
-    className={`flex items-center gap-3 rounded-2xl border p-3 ${
-      achievement.unlocked
-        ? "border-white/7 bg-white/[.025]"
-        : "border-white/5 bg-black/10 opacity-40"
-    }`}
-  >
-    <span className="grid h-9 w-9 place-items-center rounded-xl bg-violet-500/10 text-lg">
-      {achievement.icon}
-    </span>
+  {achievements.map((achievement) => (
+    <div
+      key={achievement.title}
+      className={`flex items-center gap-3 rounded-2xl border p-3 ${
+        achievement.unlocked
+          ? "border-white/7 bg-white/[.025]"
+          : "border-white/5 bg-black/10 opacity-40"
+      }`}
+    >
+      <span className="grid h-9 w-9 place-items-center rounded-xl bg-violet-500/10 text-lg">
+        {achievement.icon}
+      </span>
 
-    <div>
-      <p className="text-[11px] font-bold">{achievement.title}</p>
-      <p className="text-[9px] text-zinc-600">{achievement.sub}</p>
+      <div>
+        <p className="text-[11px] font-bold">{achievement.title}</p>
+        <p className="text-[9px] text-zinc-600">{achievement.sub}</p>
+      </div>
+
+      {achievement.unlocked && (
+        <span className="ml-auto text-[10px] text-emerald-300">✓</span>
+      )}
     </div>
-
-    {achievement.unlocked && (
-      <span className="ml-auto text-[10px] text-emerald-300">✓</span>
-    )}
-  </div>
-))}
-            </div>
+  ))}
+  
+</div>
           </article>
         </section>
 
