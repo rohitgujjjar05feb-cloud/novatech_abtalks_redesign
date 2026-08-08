@@ -1,53 +1,57 @@
-# ABTalks — 60-Day Challenge Redesign
+# Team Novatech — ABTalks mobile-first redesign
 
-Next.js + Tailwind CSS, designed mobile-first for the 390px judging viewport.
+A mobile-first redesign of the **ABTalks 60-Day Coding Challenge Platform** built with **Next.js 16, React, and Tailwind CSS**.
+
+## Live demo
+
+https://novatech-abtalks-redesign.vercel.app
+
+## GitHub repository
+
+https://github.com/rohitgujjjar05feb-cloud/novatech_abtalks_redesign
+
+## Project overview
+
+ABTalks helps students stay consistent during a 60-day coding challenge. The redesign focuses on a clean mobile-first experience with progress tracking, streak visualization, and a structured daily challenge workflow.
+
+## Features
+
+* Mobile-first responsive design
+* Dashboard with streak tracking
+* Weekly consistency tracker
+* Challenge progress visualization
+* Day 12 challenge page
+* Achievement cards
+* Clean purple-themed UI
+* Vercel deployment
+
+## Tech stack
+
+* Next.js 16
+* React
+* TypeScript
+* Tailwind CSS
+* Vercel
 
 ## Routes
 
-```text
-/
-/dashboard
-/day/12
-```
+* `/` — Landing page
+* `/dashboard` — Dashboard
+* `/day/12` — Challenge day page
 
-## UX direction
-
-Cryptographic / data-driven dark interface with purple signal accents. The product is optimized around one core behavior: **complete today's build**.
-
-### Landing `/`
-- Clear 60-day value proposition
-- Live-looking streak/progress visualization
-- Proof-of-work narrative
-- Strong entry CTA
-
-### Dashboard `/dashboard`
-- Current streak
-- 60-day progress
-- Today's task
-- Weekly consistency
-- Achievements
-- Leaderboard
-- Continue challenge CTA
-- Missed-day recovery messaging
-
-### Challenge `/day/12`
-- Day title and task
-- Build requirements
-- Learning objective
-- Interactive checklist
-- GitHub proof input
-- LinkedIn proof input
-- Submission state
-
-## Run
+## Local setup
 
 ```bash
 npm install
 npm run dev
 ```
 
-Then open `http://localhost:3000`.
+## Deployment
 
-## Hackathon authenticity
+The project is deployed on **Vercel** and optimized for mobile devices.
 
-Build the project through meaningful incremental commits rather than one giant final commit. Keep an AI Usage Log containing important prompts, design decisions, generated code/features, and changes made during the hackathon.
+## Team
+
+**Team Novatech**
+
+Built for the ViCODATHON hackathon challenge.
