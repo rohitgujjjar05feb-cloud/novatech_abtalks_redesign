@@ -49,7 +49,9 @@ export default function Dashboard() {
         <div className="mb-7 flex items-end justify-between">
           <div>
             <p className="font-mono text-[9px] uppercase tracking-[.2em] text-violet-400">Student / Dashboard</p>
-            <h1 className="mt-2 text-2xl font-black tracking-tight">Good evening, Shivam.</h1>
+            <h1 className="mt-2 text-2xl font-black tracking-tight">
+  Good evening,  Team Novatech.
+</h1>
             <p className="mt-1 text-xs text-zinc-500">One more build. Keep the signal alive.</p>
           </div>
           <div className="hidden rounded-2xl border border-emerald-400/15 bg-emerald-400/5 px-3 py-2 text-right sm:block">
@@ -121,7 +123,7 @@ export default function Dashboard() {
             Activate Shield
           </button>
         </article>
-        
+
         <article className="mt-3 overflow-hidden rounded-[28px] border border-violet-400/15 bg-gradient-to-br from-violet-500/[.12] to-white/[.02] p-5 shadow-[0_20px_70px_rgba(0,0,0,.2)]">
           <div className="flex items-center justify-between">
             <div>
