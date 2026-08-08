@@ -79,6 +79,20 @@ export default function Home() {
             </a>
           </div>
         </div>
+                  <div className="mt-10 flex flex-wrap items-center justify-center gap-3 text-[11px] font-semibold text-zinc-400">
+            <span className="rounded-full border border-white/8 bg-white/[.03] px-3 py-2">
+              GitHub commits
+            </span>
+            <span className="rounded-full border border-white/8 bg-white/[.03] px-3 py-2">
+              LinkedIn posts
+            </span>
+            <span className="rounded-full border border-white/8 bg-white/[.03] px-3 py-2">
+              60-day streak
+            </span>
+            <span className="rounded-full border border-white/8 bg-white/[.03] px-3 py-2">
+              Portfolio ready
+            </span>
+          </div>
 
         <div className="mx-auto mt-14 max-w-md md:max-w-xl">
           <div className="glass glow relative overflow-hidden rounded-[28px] p-4 sm:p-5">
@@ -180,7 +194,7 @@ export default function Home() {
             No giant syllabus. No passive watching. Just a daily build, a public signal, and one more day kept.
           </p>
           <a href="/dashboard" className="mt-8 inline-flex rounded-2xl bg-white px-6 py-4 text-sm font-bold text-black transition hover:bg-violet-100">
-            Enter ABTalks <span className="ml-2">↗</span>
+            Begin the 60-day challenge <span className="ml-2">↗</span>
           </a>
         </div>
       </section>
