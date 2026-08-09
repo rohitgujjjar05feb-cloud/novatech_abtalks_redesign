@@ -10,7 +10,7 @@ The experience is designed around the reality that college students often use th
 
 **Production URL:**
 
-https://novatech-abtalks-redesign-dcktodcce.vercel.app/
+https://novatech-abtalks-redesign.vercel.app/
 
 ---
 
